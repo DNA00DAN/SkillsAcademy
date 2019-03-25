@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00aeef</color>
+    <color name="colorPrimaryDark">#033b61</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSasolSecondary">#00aeef</color>
+    <color name="colorSasolPrimary">#033b61</color>
+    <color name="colorSasolThird">#c3d4dd</color>
+</resources>

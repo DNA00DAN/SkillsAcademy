@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="12dp"
+                android:paddingTop="16dp"
+                android:text="SKILLS ACADEMY"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorSasolPrimary"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="350dp"
+                android:src="@drawable/sasol" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv1"
+            android:text="Modules"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorSasolSecondary"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorSasolThird"
+            android:text="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+
+        <Button
+        android:text="Induction"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/colorSasolThird"
+        android:textColor="#033b61"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/inductionBtn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="144dp"
+            android:id="@+id/ibLevel2"
+            android:scaleType="fitCenter"
+            android:background="@drawable/item_selector"
+            android:text="LEVEL 2"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="144dp"
+            android:id="@+id/ibLevel3"
+            android:background="@drawable/item_selector"
+            android:text="LEVEL 3"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="144dp"
+            android:id="@+id/ibLevel4"
+            android:scaleType="fitCenter"
+            android:background="@drawable/item_selector"
+            android:text="LEVEL 4"
+            android:textColor="#ffffff"
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:id="@+id/ibMechanical"
+            android:scaleType="fitCenter"
+            android:background="@color/colorSasolThird"
+            android:text="Mechanical"
+            android:textColor="#033b61"
+            android:textSize="20dp"
+            android:layout_below="@+id/ibLevel2"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:id="@+id/ibElectrical"
+            android:scaleType="fitCenter"
+            android:background="@color/colorSasolThird"
+            android:text="Electrical"
+            android:textColor="#033b61"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/ibLevel3"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:id="@+id/ibFitting"
+            android:background="@color/colorSasolThird"
+            android:scaleType="fitCenter"
+            android:text="Fitting"
+            android:textColor="#033b61"
+            android:textSize="20dp"
+            android:layout_below="@+id/ibLevel4"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+

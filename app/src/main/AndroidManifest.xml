@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="intgo.skillsacademy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- To auto-complete the email text field in the Login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sasol Skills Academy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterUser"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Module"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".InductionTest"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginDialog" />
+        <activity android:name=".InductionTestResults" />
+        <activity
+            android:name=".MainMenu"
+            android:theme="@style/CustomTheme" />
+        <activity android:name=".UserManagement" />
+        <activity android:name=".Level2Test" />
+        <activity android:name=".RegisterSynFuel" />
+        <activity
+            android:name=".SynFuelTest"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SynFuelReport" />
+        <activity android:name=".SynFuelsMain"></activity>
+
+        <service
+            android:name=".FloatingIcon"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
